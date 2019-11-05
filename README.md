@@ -4,7 +4,7 @@ IDMS is a fully automated department management system which is a complete solut
 ### Table of content
 * [Built with](#built-with "Technology and tools used")
 * [Prerequistes](#prerequistes "Must do before getting started")
-* [Deployment](https://github.com/Ayan-Kumar-Saha/IDMS/blob/master/README.md "Run the application")
+* [Deployment](#deployment "Run the application")
 
 ## Built with
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used to develop the web application
