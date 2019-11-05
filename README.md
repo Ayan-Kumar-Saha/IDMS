@@ -1,7 +1,9 @@
 # Integrated Department Management System(IDMS)
 IDMS is a fully automated department management system which is a complete solution to all the daily tasks that are performed in any department of an educational institution, developed using Python and Flask
-### Table of content
-* [Built with](#built-with)
+_Table of content_
+* [Built with](#built-with "Technology and tools used")
+* [Prerequistes](#prerequistes "Must do before getting started")
+* [Deployment](#deployment "Run the application")
 
 # Built with
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used to develop the web application
@@ -16,7 +18,6 @@ IDMS is a fully automated department management system which is a complete solut
 # Deployment
 * Run the `server.py` file.
 * Open any web browser and go to `http://127.0.0.1:8000/` or `localhost:8000/` to start the application.
-
 
 
 
