@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/5fe5dd24ad.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/log-sign.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/log-sign.css') }}">
     <title>landing Page</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
             <input type="text" name="FullName" placeholder="Full Name" class="input"><br>
             <input type="email" name="Email" placeholder="Enter your Email ID" class="input"><br>
             <input type="password" name="FullName" placeholder="Choose a Password" class="input"><br>
-            <button class="btn">Sign Up</button>
+            <button class="btn" onclick="location.href = '/classes'">Sign Up</button>
             <div class="divider">
                 <p>or connect with</p>
             </div>
@@ -39,7 +39,7 @@
         <div class="signin-form">
             <input type="text" name="Email" placeholder="Email or Username" class="input"><br>
             <input type="password" name="Password" placeholder="Password" class="input"><br>
-            <button class="btn">Sign In</button>
+            <button class="btn" onclick="location.href = '/classes'">Sign In</button>
             <div class="forgot">
                 <a href="#">Forgot Username/Password?</a>
             </div>
@@ -58,5 +58,5 @@
    
     
 </body>
-    <script src="../js/log-sign.js"></script>  
+    <script src="{{ url_for('static', filename = 'js/log-sign.js') }}"></script>  
 </html>

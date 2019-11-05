@@ -67,13 +67,14 @@ h1{
     color: white;
     font-family: "Blinker", sans-serif;
     font-weight: 700;
+    outline: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     border: none;
-    outline: none;
     cursor: pointer;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
+    outline: none;
 }
 
 .btn:hover{

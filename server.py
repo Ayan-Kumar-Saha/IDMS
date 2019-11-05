@@ -3,8 +3,13 @@ from flask import Flask, render_template, url_for, redirect
 app = Flask(__name__)
 
 @app.route('/')
+@app.route('/home')
 def index():
     return render_template('index.html')
+
+@app.route('/login')
+def login():
+    return render_template('log-sign.html')
 
 @app.route('/user')
 def user():
@@ -24,7 +29,7 @@ def attendance():
 
 @app.route('/logout')
 def logout():
-    return render_template('attendance.html')
+    return redirect('/login')
     
 
 if __name__ == '__main__':
