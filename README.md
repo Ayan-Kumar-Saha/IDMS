@@ -7,6 +7,8 @@ IDMS is a fully automated department management system which is a complete solut
 
 # Deployment
 * Run the `server.py` file.
-* Go to your webbrowser and go to `http://127.0.0.1:8000/` or `localhost:8000/` to start the application.
+* Open any web browser and go to `http://127.0.0.1:8000/` or `localhost:8000/` to start the application.
+
+
 
 
