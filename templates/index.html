@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IDMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css') }}">
+    
+</head>
+<body>
+        
+    <header>
+            <div class="logo"><img src="{{ url_for('static', filename = 'img/Logo.png') }}" alt="logo"></div>
+            <a href="#address">Contact Us</a>
+    </header>
+
+    <div id="particles-js">
+        <div class="main">
+            <h1>Integrated Department Management System</h1>
+            <p>A complete solution to everyday tasks that need to be performed in a department</p>
+            <a id="signup" href="html/log-sign.html">Start Journey</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="details">
+                <div id="address">
+                        <p class="highlight">Copyright©2019</p>
+                        <p>Department of Computer Science and Engineering</p>
+                        <p>University of Kalyani</p>
+                        <p>Kalyani, Nadia</p>
+                        <p>West Bengal - 741235</p>
+                </div>
+                <div id="contacts">
+                        <p class="highlight">Contact:</p>
+                        <p>HOD: +91 33258 09615 (Direct)</p>
+                        <p>+91 332588750/4378</p>
+                        <p>EXTN. 304</p>  
+                        <p>Email(H.O.D.): priya@klyuniv.ac.in</p>
+                </div>
+        </div>
+        <div class="exlinks">
+                <ul>
+                    <li><a href="#">Official site</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Developers</a></li>
+                </ul>
+        </div>
+    </footer>
+
+    
+    <script src="{{ url_for('static', filename = 'js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/app.js') }}"></script>
+</body>
+    
+</html>

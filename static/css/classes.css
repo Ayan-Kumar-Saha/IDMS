@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500|Quicksand:400,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    color: 'black';
+    font-size: 1rem;
+    background-color: #f7f4f4;
+}
+
+/* Navigation */
+.left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.logo { 
+    text-align: center;
+}
+
+.logo img{
+    width: 5.2rem;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar ul {
+    padding: 2rem;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.1s ease 0s;
+}
+
+.navbar ul li a:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer h5{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.current {
+    color: purple !important;
+    font-weight: 500;
+}
+
+.current:hover {
+    border: none !important;
+}
+
+/* Right Section */
+.right{
+    width: 80%;
+    float: right;
+    height: 100vh;
+}
+
+.container{
+    margin-top: 12%;
+    width: 90%;
+    margin-left: 6%
+}
+
+.card{
+    width: 25%;
+    height: 65%;
+    display: inline-block;
+    box-shadow: 0  10px 40px rgb(0,0,0,.5);
+    border-radius: 5px; 
+    margin: 2%;
+}
+.card2{
+    margin-left: 7%;
+}
+
+.card3{
+    margin-left: 7%;
+}
+
+
+.subject-title, .subject-title2, .subject-title3 {
+    height: 20vh;
+    text-align: center;
+    color: white;
+    padding: 5%;
+}
+
+.subject-title {
+    background-color: darkmagenta;
+}
+
+.subject-title2 {
+    background-color: darkorange;
+}
+
+.subject-title3 {
+    background-color:rgb(49, 233, 49);
+}
+
+.description{
+    text-align: center;
+    padding-top: 37%;
+}
+
+.btn, .btn2, .btn3 {
+    width: 70%;
+    height: 2.5rem;
+    color: white;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgb(49, 233, 49);
+}
+
+.btn2 {
+    background-color:red;
+}
+
+.btn3 {
+    background-color:rgb(49, 233, 49);
+}
+
+.image{
+    width:80%;
+    height: 108%;
+    border-radius: 50%;
+    align-content: center;
+    transform: translate(30px,30px);
+    padding-right: 10%;
+}
+.image img{
+    width:80%;
+    height: 108%;
+    border-radius: 50%;
+    align-content: center;
+}
+
+
+/* Responsiveness */
+@media(max-width: 1000px) {
+    .card{
+        width: 40%;
+    }
+}
+@media(max-width: 850px) {
+    .card{
+        width: 60%;
+    }
+}
+@media(max-width: 600px) {
+    .card{
+        width: 70%;
+    }
+}
+@media(max-width: 450px) {
+    .card{
+        width: 80%;
+    }
+}

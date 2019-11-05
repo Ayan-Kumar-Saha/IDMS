@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+.logo img{
+    width: 100px;
+    height: 40px;
+}
+header{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    box-sizing: border-box;
+    padding: 0 5rem;
+}
+header a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #022b5a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border: 2px solid #022b5a;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+header a:hover{
+    color: white;
+    background-color: #022b5a;
+    cursor: pointer;
+}
+
+.main{
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+.main h1{
+    font-size: 2rem;
+}
+.main p{
+    font-size: 0.9rem;
+    margin-bottom: 3%;
+}
+#signup{
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+    outline: none;
+}
+#signup:hover{
+    color: #022b5a;
+    background-color: white;
+    border: 2px solid #022b5a;
+    transition: all 0.3s ease 0s;
+    cursor: pointer; 
+}
+
+#particles-js{
+    height: 35rem;
+    background-color: #002045;
+    margin-bottom: 3rem;
+}
+
+footer{
+    background-color: #f8f9fa;
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    line-height: 0.6rem;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer #contacts{
+    text-align: right;
+}
+
+.exlinks{
+   
+    width: 100%;
+}
+.exlinks ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.exlinks ul li{
+    list-style: none;
+    padding-right: 2rem;
+}
+.exlinks ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+}
+.exlinks ul li a:hover{
+    cursor: pointer;
+}
+
+.highlight{
+    font-weight: 600;
+    margin-bottom: 5px;
+}

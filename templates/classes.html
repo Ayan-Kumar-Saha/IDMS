@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/classes.css') }}">
+    <script src="https://kit.fontawesome.com/5fe5dd24ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="left">
+
+        <div class="logo"><img src="{{ url_for('static', filename = 'img/Logo.png') }}" alt="logo"></div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/user">User</a></li>
+                <li><a href="/classes" class="current">Classes</a></li>
+                <li><a href="/routine">Routine</a></li>
+                <li><a href="/attendance">Attendance</a></li>
+                <li><a href="/logout">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="footer"><h5>idms v1.0</h5></div>
+
+    </section>
+
+    <section class="right">
+
+        <div class="container"> 
+                       <!--first card start-->
+            <div class="card">
+                  
+                <div class="subject-title">   
+
+                    <h5 class="subject">Mobile Computing</h5>
+    
+                    <div class="image">
+                        <img src="{{ url_for('static', filename = 'img/prssir.jpg') }}">
+                    </div>
+
+                </div>
+                
+                <div class="description">
+
+                    <h5>MCA 3rd yr 2nd sem</h5>
+                    <h5>11 A.M - 12.30 P.M</h5>
+                    
+                    <br>
+    
+                    <button class="btn">Present</button>
+            
+                </div>
+            </div>
+            <!--end first card-->
+    
+    <!--se cond card start-->
+        <div class="card  card2">
+
+            <div class="subject-title2">     
+
+                <h5 class="subject">Digital Image Processing</h5>
+    
+                <div class="image">
+                    <img src="{{ url_for('static', filename = 'img/prssir.jpg') }}">
+                </div>
+            
+            </div>
+    
+            <div class="description">
+                
+                <h5>MCA 3rd yr 2nd sem</h5>
+                <h5>11 A.M - 12.30 P.M</h5>
+                
+                <br>
+    
+                <button class="btn2">Absent</button>
+        
+            </div>
+        </div>
+        <!--end second card-->
+        <!--third card start-->
+        <div class="card  card3">
+
+                <div class="subject-title3"> 
+
+                    <h5 class="subject">Remote Sensing</h5>
+    
+                    <div class="image">
+                        <img src="{{ url_for('static', filename = 'img/prssir.jpg') }}">
+                    </div>
+
+                </div>
+    
+                
+                <div class="description">
+                    
+                    <h5>MCA 3rd yr 2nd sem</h5>
+                    <h5>11 A.M - 12.30 P.M</h5>
+                    
+                    <br>
+    
+                    <button class="btn3">Present</button>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/classes.js"></script>
+
+</body>

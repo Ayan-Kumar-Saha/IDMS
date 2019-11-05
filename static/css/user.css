@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500|Quicksand:400,500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    color: 'black';
+    font-size: 1rem;
+    background-color: #f7f4f4;
+}
+
+/* Navigation */
+.left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.logo { 
+    text-align: center;
+}
+
+.logo img{
+    width: 5.2rem;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar ul {
+    padding: 2rem;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.1s ease 0s;
+}
+
+.navbar ul li a:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer h5{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.current {
+    color: purple !important;
+    font-weight: 500;
+}
+
+.current:hover {
+    border: none !important;
+}

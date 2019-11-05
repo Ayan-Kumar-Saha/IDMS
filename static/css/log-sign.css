@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Blinker:400,600,700,800|Montserrat:400,500,600,700,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #ecf4f3;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+.container{
+    width: 30%;
+    margin: 10% auto;
+    box-shadow: 14px 1px 31px -4px rgba(150,145,150,1);
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.signup, .signin{
+  width: 50%;
+  background: #ecf4f3;
+  font-weight: 700;
+  float: left;
+  height: 4rem;;
+  line-height: 4rem;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.signup-form, .signin-form{
+    background: #ecf4f3;
+    box-sizing: border-box;
+    clear: both;
+    padding: 3rem;
+    height: 30rem;
+}
+
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: 2px solid #ecf4f3;
+    outline: none;
+    color: #3e3e40;
+    font-family: "Blinker", sans-serif;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    transition: all 0.5s ease;
+}
+.input:focus{
+    border: 2px solid #34b3a0;
+}
+
+.btn{
+    width: 100%;
+    height: 3rem;
+    background-color: #34b3a0;
+    color: white;
+    font-family: "Blinker", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn:hover{
+    background-color: #0ABDE3;
+    transition: all 0.3s ease 0s;
+}
+.forgot{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+.forgot a{
+    text-decoration: none;
+    color: #0ABDE3;
+}
+.forgot a:hover{
+    color: #34b3a0;
+}
+
+.social{
+    text-align: center;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-buttons{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 30%;
+    color: #34b3a0;
+}
+
+.social-buttons i{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    transition: 0.2s linear;
+}
+
+.social-buttons i:hover{
+    color: #0ABDE3;
+    transform: scale(1.3);
+}
+
+p{
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+@media(max-width: 1000px) {
+    .container{
+        width: 40%;
+    }
+}
+@media(max-width: 850px) {
+    .container{
+        width: 60%;
+    }
+}
+@media(max-width: 600px) {
+    .container{
+        width: 70%;
+    }
+}
+@media(max-width: 450px) {
+    .container{
+        width: 80%;
+    }
+}
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/user.css')}}">
+</head>
+<body>
+    
+    <section class="left">
+
+        <div class="logo"><img src="{{ url_for('static', filename = 'img/Logo.png') }}" alt="logo"></div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/user" class="current">User</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/routine">Routine</a></li>
+                <li><a href="/attendance">Attendance</a></li>
+                <li><a href="/logout">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="footer"><h5>imds v1.0</h5></div>
+
+    </section>
+
+    <section class="right">
+
+        <div class="check"></div>
+        <div class="check"></div>
+        <div class="check"></div>
+        <div class="check"></div>
+        <div class="check"></div>
+        <div class="check"></div>
+        <div class="check"></div>
+        <div class="check"></div>
+
+    </section>
+
+</body>
+</html>

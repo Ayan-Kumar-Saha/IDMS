@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attendance</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/attendance.css') }}">
+    <script src="https://kit.fontawesome.com/5fe5dd24ad.js" crossorigin="anonymous"></script>
+</head>
+<body onload="showAttendance()">
+
+    <section class="left">
+
+        <div class="logo"><img src="{{ url_for('static', filename = 'img/Logo.png') }}" alt="logo"></div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/user">User</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/routine">Routine</a></li>
+                <li><a href="/attendance" class="current">Attendance</a></li>
+                <li><a href="/logout">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="footer"><h5>idms v1.0</h5></div>
+
+    </section>
+
+
+    <section class="right">
+
+        <div id="classandsem">
+           <div id="header"><span id="batch"></span> <span id="year"></span> Year <span id="sem"></span> Semester <span id="session"></span></div>
+           <div id="timeperiod"><i class="far fa-calendar-alt"></i> From: <span id="from"></span> To: <span id="to"></span></div>
+        </div>
+
+        <div class="theory">
+
+            <div class="heading"><h1>Theory</h1></div>
+
+            <div>
+                <div class="sub">
+                    <h3>Image Processing</h3>
+                    <div class="details">
+                            attended: <span class="attended">45</span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="mybar">0%</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="sub">
+                    <h3>Remote Sensing</h3>
+                    <div class="details">
+                            attended: <span class="attended"></span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="mybar">0%</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="sub">
+                    <h3>Mobile Computing</h3>
+                    <div class="details">
+                            attended: <span class="attended"></span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="mybar">0%</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="sub">
+                    <h3>Data Mining</h3>
+                    <div class="details">
+                        attended: <span class="attended"></span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="mybar">0%</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="sub">
+                    <h3>Compiler Design</h3>
+                    <div class="details">
+                            attended: <span class="attended"></span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="mybar">0%</div>
+                </div>
+            </div>     
+
+    </div>
+
+    <div class="practical">
+
+            <div class="heading"><h1>Practical</h1></div>
+
+            <div>
+                <div class="sub">
+                    <h3>Image Processing</h3>
+                    <div class="details">
+                            attended: <span class="attended">45</span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="mybar">0%</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="sub">
+                    <h3>Web-based DBMS</h3>
+                    <div class="details">
+                            attended: <span class="attended"></span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                        <div class="mybar">0%</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="sub">
+                    <h3>Minor Project</h3>
+                    <div class="details">
+                            attended: <span class="attended"></span> held: <span class="held"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="mybar">0%</div>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="overall">
+
+        <div>
+            <div class="sub">
+                <h3>Over-all</h3>
+                <div class="details">
+                    attended: <span class="attended"></span> held: <span class="held"></span>
+                </div>
+                </div>
+            <div class="container">
+                <div class="mybar">0%</div>
+            </div>
+        </div>
+  
+        
+    </div>
+
+    <div>
+        <a href="#" class="raiseticket">Raise a Ticket</a>
+        <a href="#" class="raiseticket">Download Copy</a>
+    </div>
+  
+
+    </section>
+
+    
+</body>
+    <script src="{{ url_for('static', filename = 'js/attendance.js')}}"></script>
+</html>
