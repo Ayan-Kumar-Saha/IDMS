@@ -2,6 +2,14 @@ from flask import Flask, render_template, url_for, redirect
 
 app = Flask(__name__)
 
+
+students = ['Sayan Ghosh', 'Anirban Ghar','Tapashree Seal' , 'Nivedita Malakar', 'Sudip Samanta']
+subjects = ['Mobile Computing', 'Software Engineering', 'Theory of Computation', 'Digital Electronics']
+colors = ['grad1', 'grad2', 'grad3', 'grad4']
+attended = [45, 34, 40, 60, 55]
+held = [60, 60, 60, 60, 60]
+percentage = [75, 56, 66, 100, 91]
+
 @app.route('/')
 @app.route('/home')
 def index():
@@ -30,7 +38,11 @@ def attendance():
 @app.route('/logout')
 def logout():
     return redirect('/login')
+
+@app.route('/temp')
+def temp():
+    return render_template('attendanceT.html', students = students, subjects = subjects, colors = colors, attended = attended, held = held, percentage = percentage)
     
 
 if __name__ == '__main__':
-    app.run(port=8000, debug=True)
+    app.run(debug=True)

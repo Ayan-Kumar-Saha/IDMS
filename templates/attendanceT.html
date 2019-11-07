@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attendance</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/attendanceT.css') }}">
+    <script src="https://kit.fontawesome.com/5fe5dd24ad.js" crossorigin="anonymous"></script>
+    
+</head>
+<body onload="showAttendance()">
+
+    <section class="left">
+
+        <div class="logo"><img src="{{ url_for('static', filename = 'img/Logo.png') }}" alt="logo"></div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/user">User</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/routine">Routine</a></li>
+                <li><a href="/attendance" class="current">Attendance</a></li>
+                <li><a href="/logout">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="footer"><h5>idms v1.0</h5></div>
+
+    </section>
+    <section class="right">
+        <div class="random1">
+
+            <!-- <div class="accordion">Mobile Computing</div>
+            <div class="panel grad1">
+
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Tapashree Seal</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+        
+            </div>
+
+            <div class="accordion">Software Engineering</div>
+            <div class="panel grad2">
+
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+        
+            </div>
+
+            <div class="accordion">Theory of Computation</div>
+            <div class="panel grad3">
+
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+        
+            </div>
+
+            <div class="accordion">Digital Electronics</div>
+            <div class="panel grad4">
+               
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="sub">
+                        <h3>Sayan Ghosh</h3>
+                        <div class="details">
+                            attended: <span class="attended">45</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="mybar">0%</div>
+                    </div>
+                </div>    
+        
+            </div>  -->
+            {% for i in range(subjects|count) %}
+                <div class="accordion">
+                    <h3> {{ subjects[i] }} </h3>
+                    <p> MCA301 </p>
+                </div>
+                <div class="panel {{ colors[i] }}">
+                    {% for i in range(students|length) %}
+                        <div class="percentage">
+                            <div class="stn">
+                                <h3>{{i+1}}.  {{ students[i] }}</h3>
+                                <div class="details">
+                                    attended: <span class="attended">{{ attended[i] }}</span> held: <span class="held">{{ held[i] }}</span>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="mybar">{{ percentage[i] }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</body>
+    <script src="{{ url_for('static', filename = 'js/attendanceT.js') }}"></script>
+</html>
