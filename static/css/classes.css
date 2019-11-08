@@ -155,7 +155,7 @@ body {
 
 .image{
     width:80%;
-    height: 108%;
+    height: 100%;
     border-radius: 50%;
     align-content: center;
     transform: translate(30px,30px);

@@ -5,6 +5,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+html{
+    overflow-y: scroll;
 }
 
 body {
@@ -19,12 +23,11 @@ body {
 /* Navigation */
 .left {
     width: 20%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    /* border: 2px solid red; */
 }
 
 .logo { 
@@ -204,3 +207,8 @@ div .panel .percentage {
     border-radius: 1.25rem;
 }
 
+@media(min-width: 1320px) {
+    body {
+        font-size: 1.2rem;
+    }
+}

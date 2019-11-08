@@ -75,7 +75,6 @@ body {
     border: none !important;
 }
 
-
 /* Main Content */
 .right{
     padding: 2rem 3rem 2rem 4rem; 
@@ -134,7 +133,7 @@ body {
 .mybar {
     width: 1%;
     line-height: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: white;
     text-align: right;
     padding-right: 0.6rem;
@@ -183,3 +182,15 @@ body {
 #from, #to {
     color: #0ABDE3;
 }
+
+@media(min-width: 1320px) {
+    body, .sub h3 {
+        font-size: 1.2rem;
+    }
+    .heading h1 {
+        font-size: 1.4rem;
+    }
+    .raiseticket {
+        font-size: 1.1rem;
+    }
+ }
